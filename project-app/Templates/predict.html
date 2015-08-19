@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+</div>
+
+   <div class="container">
+        <div class="row">
+            {% for new_url, sim_title, dress_url, sim_price in similar %}
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4 align="center">{{sim_title}}</h4>
+                    </div> 
+                    <img src={{new_url}} style="height: 150px;" class="img">
+                    <br>
+                    <p align="center"><a href={{dress_url}} class="btn btn-success">${{sim_price}} - Buy Now!</a></p>                    
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+   <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+                <h4 align="center">Original Dress</h4>
+            </div>
+            <img src={{org_url}} style="height: 180px;" class="img">
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+</div>
+
+ 
+{%endblock%}
+
+</body>
+</html>
+
+
+

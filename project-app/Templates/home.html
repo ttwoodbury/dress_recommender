@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    
+  <head>
+    <title>Dress Recommender</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+  </head>
+
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Dress Recommender</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <body>
+    <div class="container">
+      <hr/>
+      <div>
+          <form action="upload" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="url">Dress URL</label>
+            <input type="text" class="form-control" id="url">
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="dress_text">
+          </div>
+          <div class="form-group">
+            <label for="max_price">Maximum Price</label>
+            <input type="text" class="form-control" id="max_price">
+          </div>
+          <div class="form-group">
+            <label for="Weights">How much you like color</label>
+            <input type="text" class="form-control" id="weight">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
